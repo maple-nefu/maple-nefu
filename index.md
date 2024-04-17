@@ -2,122 +2,81 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
+# Maple Dataset
 
-[Link to another page](./another-page.html).
+The Maple Dataset is an intrusion detection evaluation dataset aimed at enhancing the performance and reliability of
+anomaly-based intrusion detection systems (IDS) and intrusion prevention systems (IPS). With the increasing
+sophistication of network attacks, having a reliable and up-to-date dataset is crucial for testing and validating IDS
+and IPS solutions.
 
-There should be whitespace between paragraphs.
+## Background
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+Traditional evaluation datasets have shown inconsistencies and unreliability, mainly due to outdated content, lack of
+traffic diversity, insufficient attack variety, anonymized packet payload data, and inadequate feature sets and
+metadata. The Maple Dataset addresses these challenges by providing a comprehensive and contemporary dataset for
+intrusion detection research.
 
-# Header 1
+## Compatible with Your Previous Work on CIC-IDS Dataset
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+The Maple Dataset is compatible with your previous work on the CIC-IDS 2017 dataset. It offers a more comprehensive and
+more diverse dataset, which is ideal for your previous work. You can use CICFlowMeter to generate the CSV files as same
+as you used before! No more code or work is needed.
 
-## Header 2
+## Dataset Category Overview
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+- **Content**: The dataset contains benign and the most recent common attacks, resembling real-world network traffic
+  (PCAP/PCAPNGs).
+- **Traffic Analysis**: Results of network traffic analysis using CICFlowMeter with labeled flows based on timestamps,
+  source and destination IPs, ports, protocols, and attack types are included in CSV files.
+- **Feature Definition**: The dataset includes definitions for extracted features.
 
-### Header 3
+## More Features Coming Soon
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+- DPDK, PF_RING support
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+> Please feedback to us if you have any questions or suggestions.
 
-#### Header 4
+## Data Generation
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+We profile the traffic by the mode and pattern we have observed in the real-world network traffic by mirroring the
+dataflow. The abstract behaviors of users based on HTTP, HTTPS with SM3/4 (People's Republic of China), GOST (Russian
+Federation) and more. SSH, RESTful API, gRPC, WASM, these modern protocols with various of implementations, and more
+were constructed for this dataset.
 
-##### Header 5
+## Middleware and Tools Available
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+> We have used a lot of tools developed by us during the creation of the dataset
+> They are open-sourced and available to download.
 
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
+|      Tool      | Description                         | Link                                                            |
+|:--------------:|:------------------------------------|:----------------------------------------------------------------|
+|   pcap2para    | extract http payload from pcap file | [maple-nefu/pcap2para](https://github.com/maple-nefu/pcap2para) |
+| more is coming | ...                                 | ...                                                             |
 
 * * *
 
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
+## Cite Us!
 
 ```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+[1] Alice, Bob IEEE Explore 114514 1919810
 ```
 
-```
-The final element.
-```
+## Download Dataset
+
+> Download link Here
+
+## Contact Us
+
+If you have any questions or need assistance, please feel free to contact us:
+
+- Email: [maple@nefu.edu.cn](mailto:maple@nefu.edu.cn)
+- GitHub: [github.com/maple-nefu](https://github.com/maple-nefu)
+- QQ Group: 631300176
+- Telegram: [@maple_dataset](https://t.me/maple_dataset)
+- Discord: [Maple Dataset](https://discord.gg/CkaAaaVKHm)
+
+## Open Source
+
+[About Open Source Projects](./open-source)
+
+* * *
