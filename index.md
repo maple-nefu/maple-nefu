@@ -2,6 +2,8 @@
 layout: default
 ---
 
+Language: [English](/index), [简体中文](/zh-cn/index)
+
 # Maple Dataset
 
 The Maple Dataset is an intrusion detection evaluation dataset aimed at enhancing the performance and reliability of
@@ -20,27 +22,33 @@ intrusion detection research.
 
 The Maple Dataset is compatible with your previous work on the CIC-IDS 2017 dataset. It offers a more comprehensive and
 more diverse dataset, which is ideal for your previous work. You can use CICFlowMeter to generate the CSV files as same
-as you used before! No more code or work is needed.
+as you used before! **No more code or work is needed.**
 
-## Dataset Category Overview
+## Dataset Category Overview (What's inside?)
 
 - **Content**: The dataset contains benign and the most recent common attacks, resembling real-world network traffic
   (PCAP/PCAPNGs).
 - **Traffic Analysis**: Results of network traffic analysis using CICFlowMeter with labeled flows based on timestamps,
   source and destination IPs, ports, protocols, and attack types are included in CSV files.
 - **Feature Definition**: The dataset includes definitions for extracted features.
+- **DDoS Attacks**: The dataset includes DDoS attacks, which are common in the real-world network traffic. And with
+  random content, the dataset is more diverse. GET, POST, HEAD and OPTIONS are the most common HTTP methods.
+- **N-day Vunerability**: The dataset includes n-day vulnerabilities, such as HeartBleed.
+- **More scenarios**: Netflow in IoT devices, DNS tunneling, and more.
 
 ## More Features Coming Soon
 
 - DPDK, PF_RING support
+- More attacks and vulnerabilities
+- More metadata for each flow
 
 > Please feedback to us if you have any questions or suggestions.
 
 ## Data Generation
 
 We profile the traffic by the mode and pattern we have observed in the real-world network traffic by mirroring the
-dataflow. The abstract behaviors of users based on HTTP, HTTPS with SM3/4 (People's Republic of China), GOST (Russian
-Federation) and more. SSH, RESTful API, gRPC, WASM, these modern protocols with various of implementations, and more
+dataflow. The abstract behaviors o8wf users based on HTTP, HTTPS with SM3/4 (People's Republic of China), GOST (Russian
+Federation) and more. SSH, RESTful API, gRPC, WASM, these modern +protocols with various of implementations, and more
 were constructed for this dataset.
 
 ## Middleware and Tools Available
@@ -53,17 +61,17 @@ were constructed for this dataset.
 |   pcap2para    | extract http payload from pcap file | [maple-nefu/pcap2para](https://github.com/maple-nefu/pcap2para) |
 | more is coming | ...                                 | ...                                                             |
 
-* * *
+---
 
 ## Cite Us!
 
 ```
-[1] Alice, Bob IEEE Explore 114514 1919810
+Paper not available yet
 ```
 
 ## Download Dataset
 
-> Download link Here
+> Download link on the way
 
 ## Contact Us
 
@@ -79,4 +87,4 @@ If you have any questions or need assistance, please feel free to contact us:
 
 [About Open Source Projects](./open-source)
 
-* * *
+---
