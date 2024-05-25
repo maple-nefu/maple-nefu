@@ -66,12 +66,12 @@ were constructed for this dataset.
 ## Cite Us!
 
 ```
-Paper not available yet
+Q. Li, B. Wang, X. Wen, Y. Chen, Cybersecurity situational awareness framework based on ResNet modeling
 ```
 
 ## Download Dataset
 
-> Download link on the way
+> [Download Here](https://maple.nefu.edu.cn/dataset)
 
 ## Contact Us
 
